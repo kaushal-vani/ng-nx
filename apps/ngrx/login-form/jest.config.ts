@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'to-do',
-  preset: '../../jest.preset.js',
+  displayName: 'login-form',
+  preset: '../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../coverage/apps/to-do',
+  coverageDirectory: '../../../coverage/apps/ngrx/login-form',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',
