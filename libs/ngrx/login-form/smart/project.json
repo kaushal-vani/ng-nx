@@ -1,0 +1,26 @@
+{
+  "name": "login-form-smart",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/ngrx/smart/src",
+  "prefix": "ngx",
+  "tags": [],
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/ngrx/smart/ng-package.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/ngrx/smart/tsconfig.lib.prod.json"
+        },
+        "development": {
+          "tsConfig": "libs/ngrx/smart/tsconfig.lib.json"
+        }
+      },
+      "defaultConfiguration": "production"
+    }
+  }
+}

@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ng-nx/login-form-smart": ["libs/ngrx/smart/src/index.ts"],
+      "@ng-nx/login-form-ui": ["libs/ngrx/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
